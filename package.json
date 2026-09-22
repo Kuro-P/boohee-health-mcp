@@ -1,0 +1,30 @@
+{
+  "name": "boohee-health-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small MCP server demo for boohee api",
+  "type": "module",
+  "bin": {
+    "boohee-health-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
+    "start": "node --env-file=.env dist/index.js",
+    "test": "npm run build && node --test --env-file=.env dist/*.test.js",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "eslint": "^9.31.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
