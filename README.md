@@ -41,4 +41,4 @@ For an MCP platform that starts a stdio process:
 ## References
 
 - [Boohee API Doc](https://ai.boohee.com/docs/)
-- [boohee Console](https://ai.boohee.com/console/)
+- [Boohee Console](https://ai.boohee.com/console/)
